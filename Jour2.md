@@ -146,7 +146,7 @@ A* fonctionne en explorant les cases avec la plus petite valeur de **F(n)**, ce 
 L’heuristique est une estimation de la distance entre un nœud et l’objectif. Différentes méthodes existent :  
 - **Distance de Manhattan** (adaptée aux grilles sans diagonale) :  
   \[
-  H(n) = |x_{\text{objectif}} - x_{\text{nœud}}| + |y_{\text{objectif}} - y_{\text{nœud}}|
+  H(n) = |x_objectif - x_nœud| + |y_objectif - y_nœud|
   \]  
 - **Distance Euclidienne** (adaptée aux déplacements diagonaux) :  
   \[
