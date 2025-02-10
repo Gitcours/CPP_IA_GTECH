@@ -17,7 +17,7 @@ L'IA permet de simuler des ennemis ou alliés réactifs, capables de prendre des
 
 ### **2.2 Navigation et Déplacement**  
 Un bon système de déplacement est essentiel pour éviter que les PNJ ne restent bloqués contre des obstacles. Exemples :  
-- **Pathfinding (A*) dans Age of Empires** : permet aux unités de se déplacer intelligemment sur la carte.  
+- **Pathfinding (A\*) dans Age of Empires** : permet aux unités de se déplacer intelligemment sur la carte.  
 - **NavMesh dans Unity** : utilisé pour la navigation des personnages en 3D.  
 
 ### **2.3 Stratégie et Prise de Décision**  
