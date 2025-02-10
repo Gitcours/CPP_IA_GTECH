@@ -150,7 +150,7 @@ L’heuristique est une estimation de la distance entre un nœud et l’objectif
 
 - **Distance Euclidienne** (adaptée aux déplacements diagonaux) :  
 
-  H(n) = \sqrt{(x_objectif - x_nœud)^2 + (y_objectif - y_nœud)^2}
+  H(n) = sqrt{(x_objectif - x_nœud)^2 + (y_objectif - y_nœud)^2}
 
 - **Distance de Chebyshev** (lorsque les déplacements diagonaux coûtent le même prix que les orthogonaux) :  
 
