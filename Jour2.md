@@ -145,17 +145,17 @@ A* fonctionne en explorant les cases avec la plus petite valeur de **F(n)**, ce 
 
 L’heuristique est une estimation de la distance entre un nœud et l’objectif. Différentes méthodes existent :  
 - **Distance de Manhattan** (adaptée aux grilles sans diagonale) :  
-  \[
+
   H(n) = |x_objectif - x_nœud| + |y_objectif - y_nœud|
-  \]  
+
 - **Distance Euclidienne** (adaptée aux déplacements diagonaux) :  
-  \[
-  H(n) = \sqrt{(x_{\text{objectif}} - x_{\text{nœud}})^2 + (y_{\text{objectif}} - y_{\text{nœud}})^2}
-  \]  
+
+  H(n) = \sqrt{(x_objectif - x_nœud)^2 + (y_objectif - y_nœud)^2}
+
 - **Distance de Chebyshev** (lorsque les déplacements diagonaux coûtent le même prix que les orthogonaux) :  
-  \[
-  H(n) = \max(|x_{\text{objectif}} - x_{\text{nœud}}|, |y_{\text{objectif}} - y_{\text{nœud}}|)
-  \]  
+
+  H(n) = max(|x_objectif - x_nœud|, |y_objectif - y_nœud|)
+
 
 Dans un environnement en grille classique, on utilise souvent la distance de Manhattan.  
 
