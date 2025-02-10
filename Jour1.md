@@ -65,7 +65,7 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Détection PNJ");
     PNJ pnj(sf::Vector2f(400, 300), 100.0f);
     sf::CircleShape player(10);
-    player.setFillColor(sf::Blue);
+    player.setFillColor(sf::Color::Blue);
     sf::Vector2f playerPos(100, 100);
 
     while (window.isOpen()) {
