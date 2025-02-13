@@ -172,19 +172,6 @@ Créez un nœud PrintMessageNode qui affiche un message personnalisé lorsqu'il 
 
 Ajoutez un nœud décorateur InvertNode qui inverse le résultat d'un nœud enfant (SUCCESS devient FAILURE et vice versa).
 
-### Exercice 3 : Intégration d'un blackboard
-
-Modifiez l'exemple pour stocker une variable EnnemiProche dans un Blackboard.
-
-Ajoutez un nœud CheckEnemyProximityNode qui vérifie la valeur de EnnemiProche et agit en conséquence.
-
-### Exercice 4 : Construction d'un comportement de patrouille
-
-Construisez un BT qui implémente un comportement de patrouille.
-
-Si un ennemi est détecté, il doit se mettre en mode "Attaque".
-
-S'il ne détecte rien, il doit continuer à patrouiller.
 
 ## 4. Conclusion
 Les Behavior Trees sont une solution puissante et flexible pour la conception d'IA en jeu vidéo. Avec une bonne implémentation en C++, ils permettent de créer des comportements avancés et facilement modifiables.
