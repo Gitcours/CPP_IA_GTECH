@@ -70,7 +70,7 @@ public:
     }
     NodeState execute() override {
         for (auto& child : children) {
-            if (child->Execute() == NodeState::FAILURE) {
+            if (child->execute() == NodeState::FAILURE) {
                 return NodeState::FAILURE;
             }
         }
@@ -90,7 +90,7 @@ public:
     }
     NodeState execute() override {
         for (auto& child : children) {
-            if (child->Execute() == NodeState::SUCCESS) {
+            if (child->execute() == NodeState::SUCCESS) {
                 return NodeState::SUCCESS;
             }
         }
