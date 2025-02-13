@@ -1,6 +1,3 @@
-Voici la version corrigée et améliorée des deux premiers exercices :  
-
----
 
 ## **Exercice 1 : Ajout de l'objectif "boire de l'eau"**  
 
