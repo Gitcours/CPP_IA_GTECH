@@ -53,7 +53,7 @@ enum class NodeState { SUCCESS, FAILURE, RUNNING };
 class BTNode {
 public:
     virtual ~BTNode() = default;
-    virtual NodeState Execute() = 0;
+    virtual NodeState execute() = 0;
 };
 ```
 
@@ -68,7 +68,7 @@ public:
     void AddChild(std::unique_ptr<BTNode> child) {
         children.push_back(std::move(child));
     }
-    NodeState Execute() override {
+    NodeState execute() override {
         for (auto& child : children) {
             if (child->Execute() == NodeState::FAILURE) {
                 return NodeState::FAILURE;
@@ -88,7 +88,7 @@ public:
     void AddChild(std::unique_ptr<BTNode> child) {
         children.push_back(std::move(child));
     }
-    NodeState Execute() override {
+    NodeState execute() override {
         for (auto& child : children) {
             if (child->Execute() == NodeState::SUCCESS) {
                 return NodeState::SUCCESS;
@@ -126,7 +126,7 @@ private:
     int expectedValue;
 public:
     ConditionNode(Blackboard& bb, const std::string& key, int value) : blackboard(bb), key(key), expectedValue(value) {}
-    NodeState Execute() override {
+    NodeState execute() override {
         return (blackboard.GetValue(key) == expectedValue) ? NodeState::SUCCESS : NodeState::FAILURE;
     }
 };
@@ -136,7 +136,7 @@ private:
     std::string actionName;
 public:
     ActionNode(std::string name) : actionName(name) {}
-    NodeState Execute() override {
+    NodeState execute() override {
         std::cout << "Action: " << actionName << std::endl;
         return NodeState::SUCCESS;
     }
