@@ -114,6 +114,12 @@ public:
 **GOAPPlanner** : Le planificateur génère un plan d'actions en fonction de l'état.
 
 ```cpp
+enum class Goal {
+    Manger,
+    ChercherNourriture
+};
+
+
 class GOAPPlanner {
 public:
     std::vector<Action*> Plan(const State& initialState, Goal goal) {
