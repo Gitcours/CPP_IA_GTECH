@@ -5,7 +5,7 @@
 class CompareNodePtr {
 public:
     bool operator()(const Node* a, const Node* b) const {
-        return a->fCost > b->fCost; // Priority queue needs min-heap behavior
+        return a->fCost > b->fCost; 
     }
 };
 
