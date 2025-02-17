@@ -126,6 +126,9 @@ void PNJ::update(sf::Vector2f playerPos, float deltaTime) {
     }
 }
 ```
+Fichier **`main.cpp`**  
+
+```cpp
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "PNJ.hpp"
@@ -167,8 +170,5 @@ int main() {
 }
 
 
-Fichier **`main.cpp`**  
-
-```cpp
 
 ```
